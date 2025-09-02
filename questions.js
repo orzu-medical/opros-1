@@ -3,25 +3,21 @@ const QUESTIONS = [
     id: "Вопрос-1",
     text: "Насколько удобной была запись на прием? (1–10)",
     muted: "1 — неудобно, 10 — очень удобно",
-    img: "https://orzumed.uz/wp-content/uploads/2024/08/zangata-adres-2048x1365-1.jpg",
   },
   {
     id: "Вопрос-2",
     text: "Насколько внимателен был врач? (1–10)",
     muted: "1 — невнимательно, 10 — очень внимательно",
-    img: "https://orzumed.uz/wp-content/uploads/2024/06/0m5a9144-scaled.jpg",
   },
   {
     id: "Вопрос-3",
     text: "Чувствовали ли вы заботу и комфорт? (1–10)",
     muted: "1 — нет, 10 — максимально",
-    img: "https://clinics.uz/components/com_mtree/img/listings/m/5162.jpg",
   },
   {
     id: "Вопрос-4",
     text: "Порекомендуете ли клинику друзьям? (1–10)",
     muted: "1 — нет, 10 — да",
-    img: "https://sendsay.ru/blog/storage/2023/12/11/2c7563b76b3bdcb0f46ea5b2c8d93dfab1def7a0.svg",
   },
 ];
 
@@ -43,7 +39,6 @@ QUESTIONS.forEach((q, idx) => {
   slide.className = "swiper-slide";
   slide.innerHTML = `
     <div class="card" data-q="${idx + 1}">
-      <div class="media"><img src="${q.img}" /></div>
       <div class="q">${idx + 1}. ${q.text}</div>
       <div class="muted">${q.muted}</div>
       <div class="rating" data-key="${q.id}"></div>

@@ -52,7 +52,6 @@ QUESTIONS.forEach((q, idx) => {
   `;
   swiperWrapper.appendChild(slide);
 });
-
 // Создаём слайд формы для Ф.И.О. и филиала
 const formSlide = document.createElement("div");
 formSlide.className = "swiper-slide";
